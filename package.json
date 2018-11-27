@@ -1,0 +1,23 @@
+{
+	"name": "utils",
+	"version": "0.1.0",
+	"author": "Omar Desogus",
+	"description": "Some JavaScript util functions.",
+	"license": "MIT",
+	"main": "index.js",
+	"scripts": {
+		"test": "mocha test.js"
+	},
+	"homepage": "https://github.com/cedoor/utils#readme",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/cedoor/utils.git"
+	},
+	"bugs": {
+		"url": "https://github.com/cedoor/utils/issues"
+	},
+	"devDependencies": {
+		"mocha": "5.2.0",
+		"standard": "12.0.1"
+	}
+}
