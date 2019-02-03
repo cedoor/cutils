@@ -25,8 +25,7 @@ function capitalizeWordList (wordList) {
   return wordList.map(capitalizeWords)
 }
 
-// Exports
-module.exports = {
+export default {
   capitalizeWord,
   capitalizeWords,
   capitalizeWordList

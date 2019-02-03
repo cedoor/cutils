@@ -1,3 +1,3 @@
-# Utils
+# Cutils
 
 Some JavaScript util functions.
