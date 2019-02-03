@@ -1,5 +1,5 @@
 {
-	"name": "cutils",
+	"name": "cutls",
 	"version": "0.1.0",
 	"description": "Some JavaScript util functions.",
 	"author": {
@@ -7,22 +7,22 @@
 		"url": "https://cedoor.org"
 	},
 	"license": "MIT",
-	"main": "dist/cutils.js",
-	"unpkg": "dist/cutils.min.js",
-	"jsdelivr": "dist/cutils.min.js",
+	"main": "dist/cutls.js",
+	"unpkg": "dist/cutls.min.js",
+	"jsdelivr": "dist/cutls.min.js",
 	"module": "src/index.js",
 	"scripts": {
 		"pretest": "rollup -c",
 		"test": "standard --fix 'src/**/*.js' 'test/**/*-test.js' && tape 'test/**/*.js'",
 		"prepublishOnly": "rm -rf dist && npm run test"
 	},
-	"homepage": "https://github.com/cedoor/cutils",
+	"homepage": "https://github.com/cedoor/cutls",
 	"repository": {
 		"type": "git",
-		"url": "git+https://github.com/cedoor/cutils.git"
+		"url": "git+https://github.com/cedoor/cutls.git"
 	},
 	"bugs": {
-		"url": "https://github.com/cedoor/cutils/issues"
+		"url": "https://github.com/cedoor/cutls/issues"
 	},
 	"devDependencies": {
 		"@babel/core": "7.2.2",
