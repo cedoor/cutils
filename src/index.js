@@ -1,1 +1,1 @@
-export { default as general } from './general/index'
+export { default as strings } from './strings/index'
