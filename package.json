@@ -1,40 +1,40 @@
 {
-	"name": "cutls",
-	"version": "0.1.1",
-	"description": "Some JavaScript util functions.",
-	"author": {
-		"name": "Omar Desogus",
-		"url": "https://cedoor.org"
-	},
-	"license": "MIT",
-	"main": "dist/cutls.js",
-	"unpkg": "dist/cutls.min.js",
-	"jsdelivr": "dist/cutls.min.js",
-	"module": "src/index.js",
-	"scripts": {
-		"pretest": "rollup -c",
-		"test": "standard --fix 'src/**/*.js' 'test/**/*-test.js' && tape 'test/**/*.js'",
-		"prepublishOnly": "rm -rf dist && npm run test"
-	},
-	"homepage": "https://github.com/cedoor/cutls",
-	"repository": {
-		"type": "git",
-		"url": "git+https://github.com/cedoor/cutls.git"
-	},
-	"bugs": {
-		"url": "https://github.com/cedoor/cutls/issues"
-	},
-	"devDependencies": {
-		"@babel/core": "7.2.2",
-		"@babel/plugin-proposal-class-properties": "7.3.0",
-		"@babel/plugin-proposal-object-rest-spread": "7.3.1",
-		"@babel/preset-env": "7.3.1",
-		"rollup": "1.1.2",
-		"rollup-plugin-babel": "4.3.2",
-		"rollup-plugin-commonjs": "9.2.0",
-		"rollup-plugin-node-resolve": "4.0.0",
-		"rollup-plugin-terser": "4.0.3",
-		"standard": "12.0.1",
-		"tape": "4.9.2"
-	}
+  "name": "cutls",
+  "version": "0.1.1",
+  "description": "Some JavaScript util functions.",
+  "author": {
+    "name": "Omar Desogus",
+    "url": "https://cedoor.org"
+  },
+  "license": "MIT",
+  "main": "dist/cutls.js",
+  "unpkg": "dist/cutls.min.js",
+  "jsdelivr": "dist/cutls.min.js",
+  "module": "src/index.js",
+  "scripts": {
+    "pretest": "rollup -c",
+    "test": "tape 'test/**/*.js'",
+    "prepublishOnly": "rm -rf dist && npm run test"
+  },
+  "homepage": "https://github.com/cedoor/cutls",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cedoor/cutls.git"
+  },
+  "bugs": {
+    "url": "https://github.com/cedoor/cutls/issues"
+  },
+  "devDependencies": {
+    "@babel/core": "7.2.2",
+    "@babel/plugin-proposal-class-properties": "7.3.0",
+    "@babel/plugin-proposal-object-rest-spread": "7.3.1",
+    "@babel/preset-env": "7.3.1",
+    "rollup": "1.1.2",
+    "rollup-plugin-babel": "4.3.2",
+    "rollup-plugin-commonjs": "9.2.0",
+    "rollup-plugin-node-resolve": "4.0.0",
+    "rollup-plugin-terser": "4.0.3",
+    "standard": "12.0.1",
+    "tape": "4.9.2"
+  }
 }
