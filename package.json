@@ -12,6 +12,7 @@
   "jsdelivr": "dist/cutls.min.js",
   "module": "src/index.js",
   "scripts": {
+    "start": "live-server",
     "pretest": "rollup -c",
     "test": "tape 'test/**/*.js'",
     "prepublishOnly": "rm -rf dist && npm run test"
@@ -29,6 +30,7 @@
     "@babel/plugin-proposal-class-properties": "7.3.0",
     "@babel/plugin-proposal-object-rest-spread": "7.3.1",
     "@babel/preset-env": "7.3.1",
+    "live-server": "1.2.1",
     "rollup": "1.1.2",
     "rollup-plugin-babel": "4.3.2",
     "rollup-plugin-commonjs": "9.2.0",
