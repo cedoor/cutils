@@ -1,13 +1,16 @@
 /**
  * Download a file with the the text passed as parameter.
  * @param filename
- * @param text
+ * @param content
+ * @param contentType
  */
-function download (filename, text) {
+function download (filename, content, contentType = 'text/json') {
   const element = document.createElement('a')
+  const blob = new Blob([content], { type: contentType })
 
-  element.setAttribute('href', 'data:text/plain;charset=utf-8,' + encodeURIComponent(text))
-  element.setAttribute('download', filename)
+  element.href = window.URL.createObjectURL(blob)
+  element.download = filename
+  element.dataset.downloadurl = [contentType, element.download, element.href].join(':')
   element.style.display = 'none'
 
   document.body.appendChild(element)
