@@ -15,7 +15,7 @@ function getHTML (url) {
 
     http.onerror = reject
 
-    http.open('GET', `https://cors-anywhere.herokuapp.com/${url}`, true)
+    http.open('GET', `https://cors.cedoor.org/${url}`, true)
     http.send()
   })
 }
