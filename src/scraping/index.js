@@ -8,8 +8,12 @@ function getHTML (url) {
     const http = new XMLHttpRequest()
 
     http.onreadystatechange = function () {
-      if (this.readyState === 4 && this.status === 200) {
-        resolve(this.responseText)
+      if (this.readyState === 4) {
+        if (this.status === 200) {
+          resolve(this.responseText)
+        } else {
+          reject(this.responseText)
+        }
       }
     }
 
