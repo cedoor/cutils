@@ -12,7 +12,7 @@ const config = {
     format: 'umd',
     indent: false,
     extend: true,
-    banner: `// ${meta.homepage} v${meta.version} Copyright ${(new Date).getFullYear()} ${meta.author.name}`,
+    banner: `// ${meta.homepage} v${meta.version} Copyright ${(new Date).getFullYear()} ${meta.author.name}.`,
   },
   plugins: [
     resolve({extensions: ['.js']}),
