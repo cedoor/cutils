@@ -15,9 +15,9 @@ const config = {
     banner: `// ${meta.homepage} v${meta.version} Copyright ${(new Date).getFullYear()} ${meta.author.name}.`,
   },
   plugins: [
-    resolve({extensions: ['.js']}),
+    resolve({ extensions: ['.js'] }),
     commonjs(),
-    babel({extensions: ['.js'], include: ['src/**/*']})
+    babel({ extensions: ['.js'], include: ['src/**/*'] })
   ]
 }
 
