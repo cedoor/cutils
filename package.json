@@ -14,7 +14,7 @@
   "scripts": {
     "start": "live-server",
     "pretest": "rollup -c",
-    "test": "tape 'test/**/*.js'",
+    "test": "tape 'test/**/*.js' | tap-spec",
     "prepublishOnly": "rm -rf dist && npm run test"
   },
   "homepage": "https://github.com/cedoor/cutls",
@@ -37,6 +37,7 @@
     "rollup-plugin-node-resolve": "4.2.4",
     "rollup-plugin-terser": "4.0.4",
     "standard": "12.0.1",
+    "tap-spec": "5.0.0",
     "tape": "4.11.0"
   }
 }
