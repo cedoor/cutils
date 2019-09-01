@@ -1,32 +1,30 @@
 /**
- * Return the word with the first letter capitalized.
- * @param word
+ * Return the string with the first letter capitalized.
+ * @param string
  * @returns {string}
  */
-function capitalizeWord (word) {
-  return word.charAt(0).toUpperCase() + word.toLowerCase().slice(1)
+function capitalize (string) {
+  if (typeof string !== 'string') {
+    throw TypeError('Parameter must be a string.')
+  }
+
+  return string.charAt(0).toUpperCase() + string.toLowerCase().slice(1)
 }
 
 /**
- * Return the words with the first letter capitalized.
- * @param words
- * @returns {string}
- */
-function capitalizeWords (words) {
-  return words.split(' ').map(capitalizeWord).join(' ')
-}
-
-/**
- * Return an array of word with first letter capitalized.
- * @param wordList
+ * Return an array of strings with first letter capitalized.
+ * @param list
  * @returns {string[]}
  */
-function capitalizeWordList (wordList) {
-  return wordList.map(capitalizeWords)
+function capitalizeList (list) {
+  if (!Array.isArray(list) || !list.every(string => typeof string === 'string')) {
+    throw TypeError('Parameter must be an array of strings.')
+  }
+
+  return list.map(capitalize)
 }
 
 export default {
-  capitalizeWord,
-  capitalizeWords,
-  capitalizeWordList
+  capitalize,
+  capitalizeList
 }
