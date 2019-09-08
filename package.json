@@ -1,15 +1,16 @@
 {
-  "name": "cutls",
-  "version": "0.1.6",
+  "name": "@cedoor/utils",
+  "version": "0.1.7",
   "description": "Some JavaScript util functions.",
   "author": {
     "name": "Omar Desogus",
+    "email": "omardesogus9@gmail.com",
     "url": "https://cedoor.org"
   },
   "license": "MIT",
-  "main": "dist/cutls.js",
-  "unpkg": "dist/cutls.min.js",
-  "jsdelivr": "dist/cutls.min.js",
+  "main": "dist/utils.js",
+  "unpkg": "dist/utils.min.js",
+  "jsdelivr": "dist/utils.min.js",
   "module": "src/index.js",
   "scripts": {
     "start": "live-server",
@@ -17,13 +18,13 @@
     "test": "tape 'test/**/*.js' | tap-spec",
     "prepublishOnly": "rm -rf dist && npm run test"
   },
-  "homepage": "https://github.com/cedoor/cutls",
+  "homepage": "https://github.com/cedoor/utils",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/cedoor/cutls.git"
+    "url": "git+https://github.com/cedoor/utils.git"
   },
   "bugs": {
-    "url": "https://github.com/cedoor/cutls/issues"
+    "url": "https://github.com/cedoor/utils/issues"
   },
   "devDependencies": {
     "@babel/core": "7.5.5",

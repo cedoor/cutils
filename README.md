@@ -1,8 +1,8 @@
-# Cutls
+# Utils
 
-[![](https://img.shields.io/github/license/cedoor/cutls.svg?style=flat-square)](https://github.com/cedoor/cutls/blob/dev/LICENSE)
-[![](https://img.shields.io/david/cedoor/cutls.svg?style=flat-square)](https://david-dm.org/cedoor/cutls)
-[![](https://img.shields.io/david/dev/cedoor/cutls.svg?style=flat-square)](https://david-dm.org/cedoor/cutls?type=dev)
+[![](https://img.shields.io/github/license/cedoor/utils.svg?style=flat-square)](https://github.com/cedoor/utils/blob/dev/LICENSE)
+[![](https://img.shields.io/david/cedoor/utils.svg?style=flat-square)](https://david-dm.org/cedoor/utils)
+[![](https://img.shields.io/david/dev/cedoor/utils.svg?style=flat-square)](https://david-dm.org/cedoor/utils?type=dev)
 
 Some JavaScript utils.
 
@@ -12,13 +12,13 @@ Some JavaScript utils.
 
 You can install mmp package with npm:
 
-    npm install cutls --save
+    npm install @cedoor/utils --save
     
 ### CDN
 
 You can also load it using a \<script> using the unpkg CDN:
     
-    <script src="https://unpkg.com/cutls"></script>
+    <script src="https://unpkg.com/@cedoor/utils"></script>
 
 ## Development
 
@@ -74,7 +74,7 @@ Examples:
 * Use Arrow Functions whenever you need to preserve the lexical value of this.
 
 ## License
-* See [LICENSE](https://github.com/cedoor/cutls/blob/master/LICENSE) file.
+* See [LICENSE](https://github.com/cedoor/utils/blob/master/LICENSE) file.
 
 ## Contacts
 #### Developer
