@@ -1,2 +1,5 @@
-export { default as strings } from './strings/index'
-export { default as file } from './file/index'
+// General
+export { download } from './general/download'
+// Strings
+export { parseURL } from './strings/parseURL'
+export { capitalize, capitalizeList } from './strings/capitalize'

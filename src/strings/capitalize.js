@@ -3,7 +3,7 @@
  * @param string
  * @returns {string}
  */
-function capitalize (string) {
+export function capitalize (string) {
   if (typeof string !== 'string') {
     throw TypeError('Parameter must be a string.')
   }
@@ -16,15 +16,10 @@ function capitalize (string) {
  * @param list
  * @returns {string[]}
  */
-function capitalizeList (list) {
+export function capitalizeList (list) {
   if (!Array.isArray(list) || !list.every(string => typeof string === 'string')) {
     throw TypeError('Parameter must be an array of strings.')
   }
 
   return list.map(capitalize)
-}
-
-export default {
-  capitalize,
-  capitalizeList
 }

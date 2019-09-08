@@ -4,9 +4,9 @@
  * @param content
  * @param contentType
  */
-function download (filename, content, contentType = 'text/json') {
+export function download (filename, content, contentType = 'text/json') {
   const element = document.createElement('a')
-  const blob = new Blob([content], { type: contentType })
+  const blob = new window.Blob([content], { type: contentType })
 
   element.href = window.URL.createObjectURL(blob)
   element.download = filename
@@ -18,8 +18,4 @@ function download (filename, content, contentType = 'text/json') {
   element.click()
 
   document.body.removeChild(element)
-}
-
-export default {
-  download
 }
