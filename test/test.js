@@ -1,6 +1,16 @@
 const tape = require('tape')
 const utils = require('../dist/utils')
 
+/** Math module tests **/
+
+tape('Operation functions', function (test) {
+  test.equal(utils.sum(1, 1, 2), 4)
+
+  test.throws(() => utils.sum(1, 2, 'hello'))
+
+  test.end()
+})
+
 /** String module tests **/
 
 tape('Capitalize functions', function (test) {
