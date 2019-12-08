@@ -7,19 +7,20 @@
 export function get (url, body) {
   return new Promise(function (resolve, reject) {
     const http = new window.XMLHttpRequest()
+    const json = function (string) {
+      try {
+        return JSON.parse(string)
+      } catch (error) {
+        return string
+      }
+    }
 
     http.onreadystatechange = function () {
       if (http.readyState === 4) {
         if (http.status === 200) {
-          resolve(http.responseText)
+          resolve(json(http.responseText))
         } else {
-          try {
-            const json = JSON.parse(http.responseText)
-
-            reject(json)
-          } catch (error) {
-            reject(http.responseText)
-          }
+          reject(json(http.responseText))
         }
       }
     }
