@@ -78,6 +78,6 @@ Examples:
 
 ## Contacts
 #### Developer
-* e-mail : omardesogus9@gmail.com
+* e-mail : me@cedoor.dev
 * github : [@cedoor](https://github.com/cedoor)
-* website : https://cedoor.org
+* website : https://cedoor.dev
