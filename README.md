@@ -10,7 +10,7 @@ Some JavaScript utils.
 
 ### npm
 
-You can install mmp package with npm:
+You can install utils package with npm:
 
     npm install @cedoor/utils --save
     
